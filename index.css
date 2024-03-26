@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.abs {
+    position: absolute;
+}
+
+.house {
+    display: flex;
+    gap: 2%;
+    flex-direction: column;
+    width: 35vw;
+    height: 40vw;
+}
+
+.roof-container {
+    position: relative;
+    flex: 1;
+}
+
+.roof {
+    width: 100%;
+    height: 100%;
+    background: rgb(125, 125, 125);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.flue {
+    background: rgb(125, 125, 125);
+    height: 50%;
+    width: 10%;
+    clip-path: polygon(100% 0, 100% 100%, 0 60%, 0 0);
+    position: absolute;
+    top:13%;
+    left:75%;
+}
+
+.base-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 208, 138);
+    flex: 2;
+}
+
+.window {
+    height: 15vw;
+    width: 15vw;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #fff;
+}
+
+.step {
+    position: absolute;
+    top:92%;
+    height: 15%;
+    width: 20vw;
+    background-color: rgb(217, 217, 217);
+    outline: 1vw solid #ffffff;
+}
